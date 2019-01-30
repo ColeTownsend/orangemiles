@@ -20,8 +20,14 @@
     "postinstall": "electron-builder install-app-deps"
   },
   "lint-staged": {
-    "{src}/**/*.{js,ts,tsx,json,css,scss,md}": ["prettier --config ./.prettierrc --write", "git add"],
-    "{src}/**/*.{js,ts,tsx}": ["tslint --project ./tsconfig.json --fix", "git add"]
+    "{src}/**/*.{js,ts,tsx,json,css,scss,md}": [
+      "prettier --config ./.prettierrc --write",
+      "git add"
+    ],
+    "{src}/**/*.{js,ts,tsx}": [
+      "tslint --project ./tsconfig.json --fix",
+      "git add"
+    ]
   },
   "build": {
     "productName": "OrangeMiles",
@@ -32,7 +38,11 @@
     "directories": {
       "output": "release"
     },
-    "files": ["dist/", "node_modules/", "package.json"],
+    "files": [
+      "dist/",
+      "node_modules/",
+      "package.json"
+    ],
     "linux": {
       "target": "deb"
     },

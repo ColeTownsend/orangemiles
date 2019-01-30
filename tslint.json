@@ -4,10 +4,10 @@
   "jsRules": {},
   "rules": {
     "max-line-length": [true, 120],
-    "trailing-comma": false,
+    "trailing-comma": true,
     "ter-indent": [
       true,
-      4,
+      2,
       {
         "SwitchCase": 1
       }
